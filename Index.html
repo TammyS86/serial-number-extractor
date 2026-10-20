@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Serial Number Extractor</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="myEnroll.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <h1>Serial Number Extractor</h1>
+      <p>Extrahera serienummer och kopiera resultatet.</p>
+    </header>
+
+    <section class="panel">
+      <label for="input">1. Klistra in din data</label>
+      <textarea id="input" placeholder="Klistra in dina rader här..."></textarea>
+
+      <div class="buttons">
+        <button id="generate" class="primary">Generera resultat</button>
+        <button id="clear" class="secondary">Rensa allt</button>
+      </div>
+    </section>
+
+    <div class="stats">
+      <div class="stat">
+        <strong id="count">0</strong>
+        <span>Serienummer hittade</span>
+      </div>
+      <div class="stat">
+        <strong id="lines">0</strong>
+        <span>Rader bearbetade</span>
+      </div>
+    </div>
+
+    <section class="panel">
+      <label for="output">2. Resultat</label>
+      <textarea id="output" readonly placeholder="Resultatet visas här..."></textarea>
+
+      <div class="buttons">
+        <button id="copy" class="primary">Kopiera resultat</button>
+      </div>
+
+      <p id="status" role="status" aria-live="polite"></p>
+    </section>
+  </main>
+</body>
+</html>
